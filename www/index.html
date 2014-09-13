@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<!--
+	Cards − save and show invoicing details, business cards, id's
+
+	Copyright (C) 2014  Lucjan R. Szreter
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+
+	https://www.gnu.org/licenses/gpl.html
+
+--!>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+<!--		<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio: 1.5)" href="hdpi.css" />
+		<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio: 1.0)" href="mdpi.css" />-->
+
+
+        <!--<meta name="msapplication-tap-highlight" content="no" />-->
+        <title>Cards</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="lang/pl/lang.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <!--<script type="text/javascript" src="js/painlessfs.js"></script>-->
+        <!--<script type="text/javascript">init();</script>-->
+
+<!--        <div id="app" class="okno_duze">
+			<img src="img/cards_logo_na_tlo_glowne.svg" id="logo_glowne" alt="*">
+			<div id="menu_glowne_menu" class="menu_menu">
+				<img src="img/cards_menu_dodaj_wiz.svg" id="menu_dodaj_wiz" alt="*">
+				<img src="img/cards_menu_grupy.svg" id="menu_grupy" alt="*">
+				<img src="img/cards_wizytowka_lista.svg" id="menu_wizytowka_lista" alt="*">
+				<img src="img/cards_menu_ustaawienia.svg" id="menu_ustawienia" onclick="" alt="*">
+				<img src="img/cards_menu_pomoc.svg" id="menu_pomoc" alt="*">
+			</div>
+        </div>
+
+		ekran wyboru sposobu dodawania wizytowki
+		<div id="menu_dodaj_wiz_sposob" class="okno_duze">
+			<img src="img/cards_logo_na_tlo_glowne.svg" id="logo_glowne" alt="*">
+			<div id="menu_dodaj_wiz_sposob_menu" class="menu_menu">
+				<img src="img/cards_menu_dodaj_z_klaw.svg" id="menu_dodaj_wiz_z_klaw" alt="*">
+				<img src="img/cards_menu_dodaj_z_aparatu.svg" id="menu_dodaj_wiz_z_aparatu" alt="*">
+				<img src="img/cards_menu_dodaj_z_galerii.svg" id="menu_dodaj_wiz_z_galerii" alt="*">
+
+			</div>
+		</div>-->
+        <div id="app" class="okno_duze">
+			<div id="debug"></div>
+
+			<img src="img/cards_logo_kolor.svg" id="logo_glowne" alt="*">
+			<div id="menu_glowne_menu" class="menu_menu">
+				<img src="img/cards_menu_dodaj_z_klaw.svg" id="menu_dodaj_wiz_z_klaw" alt="*">
+				<img src="img/cards_menu_dodaj_z_aparatu.svg" id="menu_dodaj_wiz_z_aparatu" alt="*">
+				<img src="img/cards_menu_dodaj_z_galerii.svg" id="menu_dodaj_wiz_z_galerii" alt="*">
+			</div>
+			<div id="menu_menu_podmenu">
+				<!--<img src="img/cards_menu_dodaj_wiz.svg" id="menu_dodaj_wiz" alt="*"><br>-->
+				<!--<img src="img/cards_menu_grupy.svg" id="menu_grupy" alt="*"><br>-->
+				<img src="img/cards_wizytowka_lista.svg" id="menu_wizytowka_lista" alt="*" class="img_male"><br>
+				<img src="img/cards_menu_udostepnij.svg" id="menu_udostepnij" alt="*" class="img_male"><br>
+				<!--<img src="img/cards_menu_ustaawienia.svg" id="menu_ustawienia" class="img_male" alt="*"><br>-->
+				<img src="img/cards_menu_info.svg" id="menu_info" alt="*" class="img_male"><br>
+				<img src="img/cards_menu_pomoc.svg" id="menu_pomoc" alt="*" class="img_male"><br>
+			</div>
+        </div>
+
+		<!--ekran dodawania wizytowki z klawiatury-->
+		<div id="menu_dodaj_wiz_z_klawiatury" class="okno_duze">
+			<h1 id="wprowadz_tresc_wizytowki"></h1>
+			<p id="wprowadz_tresc_wizytowki_info"></p>
+			<form id="f1">
+<!--				<label for="f1_nazwa"><img src="img/cards_nowa_opis.svg" alt="*" class="img_pozycja"></label>
+				<input type="text" name="f1_nazwa" id="f1_nazwa" maxlength="30" >-->
+				<div id="pola_szczegolowe">
+					<label for="f1_company_name"><img src="img/cards_nowa_firma.svg" alt="*" class="img_pozycja" autofocus></label>
+					<input type="text" name="f1_company_name" id="f1_company_name" maxlength="100" >
+					<br>
+					<label for="f1_imie_nazwisko"><img src="img/cards_nowa_imie_nazwisko.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_imie_nazwisko" id="f1_imie_nazwisko" maxlength="100">
+					<br>
+					<label for="f1_stanowisko"><img src="img/cards_nowa_stanowisko.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_stanowisko" id="f1_stanowisko" maxlength="100">
+					<br>
+					<label for="f1_adres_1"><img src="img/cards_nowa_adres.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_adres_1" id="f1_adres_1" maxlength="100" >
+					<br>
+					<label for="f1_adres_2"><img src="img/cards_nowa_adres.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_adres_2" id="f1_adres_2" maxlength="100" >
+					<br>
+					<label for="f1_adres_3"><img src="img/cards_nowa_adres.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_adres_3" id="f1_adres_3" maxlength="100" >
+					<br>
+					<label for="f1_tel"><img src="img/cards_nowa_tel.svg" alt="*" class="img_pozycja"></label>
+					<input type="tel" name="f1_tel" id="f1_tel" maxlength="100">
+					<br>
+					<label for="f1_telkom"><img src="img/cards_nowa_telkom.svg" alt="*" class="img_pozycja"></label>
+					<input type="tel" name="f1_telkom" id="f1_telkom" maxlength="100">
+					<br>
+					<label for="f1_email"><img src="img/cards_nowa_email.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_email" id="f1_email" maxlength="100" >
+					<br>
+					<label for="f1_www"><img src="img/cards_nowa_www.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_www" id="f1_www" maxlength="100" >
+					<br>
+					<label for="f1_komunikator"><img src="img/cards_nowa_komunikator.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_komunikator" id="f1_komunikator" maxlength="100" >
+					<br>
+					<label for="f1_id1"><img src="img/cards_nowa_id.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_id1" id="f1_id1" maxlength="100">
+					<br>
+					<label for="f1_id2"><img src="img/cards_nowa_id.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_id2" id="f1_id2" maxlength="100">
+					<br>
+					<label for="f1_konto_bankowe"><img src="img/cards_nowa_konto.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_konto_bankowe" id="f1_konto_bankowe" maxlength="100" placeholder="">
+					<br>
+					<label for="f1_samochod"><img src="img/cards_nowa_samochod.svg" alt="*" class="img_pozycja"></label>
+					<input type="text" name="f1_samochod" id="f1_samochod" maxlength="100">
+				</div>
+				<br>&nbsp;<br>
+				<img src="img/cards_cofnij.svg" alt="*" id="dodaj_wiz_z_klawiatury_cofnij">
+				<img src="img/cards_plus.svg" alt="*" id="dodaj_wiz_z_klawiatury_plus" >
+				<br>&nbsp;<br>
+			</form>
+		</div>
+		<!--okno listy wizytowek-->
+		<div id="lista_wizytowek_div" class="okno_duze"></div>
+		<!--okno wizytowki-->
+		<div id="okno_wizytowki" class="okno_wizytowki"></div>
+
+		<div id="wizytowka_sterowanie"></div>
+		<!--okno pobierania z galerii i aparatu-->
+		<div id="okno_pobierania_zdjecia" class="okno_duze"></div>
+		<!--okno menu-->
+		<div id="okno_mg" class="okno_mg"></div>
+		<div id="okno_pomoc" class="okno_duze"></div>
+		<div id="okno_o_programie" class="okno_duze"></div>
+		<div id="okno_ustawienia" class="okno_duze"></div>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+/*
+Copyright (C) 2013 Lucjan R. Szreter
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: text;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    font-family: 'Droid Sans', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font-size:30px;
+
+	height: 100%;
+    width: 100%;
+
+    margin:0;
+    padding:0;
+
+	text-align: center;
+	background-color: antiquewhite;
+}
+
+ h1 {
+	font-size: 40px;
+	font-weight: bold;
+	margin: 10px 0 5px 0;
+	color: red;
+	border: 0;
+	text-align: center;
+}
+h2 {
+	text-align: left;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 10px 0 5px 0;
+	color: #0072c6;
+	border-bottom: 3px solid white;
+	padding-right: 200px;
+	width: auto;
+}
+h3 {
+	text-align: center;
+	color: #0072c6;
+	margin: 10px 0 5px 0;
+	font-size: 32px;
+	font-weight: bold;
+}
+h4 {
+	text-align: center;
+	color: #0072c6;
+	margin: 10px 0 5px 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+h5 {
+	text-align: center;
+	color: #0072c6;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
+p {
+	font-size: 30px;
+	margin: 0 0 0 0;
+	text-align: left;
+}
+.wyrownaj_c {
+	text-align: center;
+}
+.wyrownaj_l {
+	text-align: left;
+}
+a:link, a:visited {
+	color: black;
+	text-decoration: #0072c6 underline ;
+}
+table {
+	width: 100%;
+}
+table {
+	width: 100%;
+}
+td {
+	text-align: left;
+	padding: 10px;
+}
+tr, td {
+	border-bottom: 3px solid white;
+}
+th {
+	text-align: right;
+}
+li {
+	text-align: left;
+
+}
+.pomoc_ilustracja {
+	border: 3px solid white;
+	border-radius: 10px;
+	box-shadow: 0 0 20px black;
+	margin: 25px;
+	max-width: 90%;
+}
+.wskazowki {
+	width: 80%;
+	margin: 25px;
+	border-bottom: 3px solid white;
+	box-shadow: 0 0 20px black;
+	text-align: left;
+	padding: 20px;
+
+}
+	.wskazowki h3 {
+		text-align: left;
+	}

@@ -1,0 +1,76 @@
+//var l__ = {}; //tylko w pliku PL w pozostalych wykomentować
+l__.grupa0 = 'Common';
+l__.grupa1 = 'Company';
+l__.grupa2 = "Personal id's";
+l__.grupa3 = 'Discounts cards';
+l__.grupa4 = 'Membership cards';
+
+//l__.zapisano_ustawienia='Settings saved';
+l__.brak_wizytowek='No cards';
+l__.nie_mozna_wyswietlic='Card cannot be displayed';
+l__.nie_wybrano_zdjecia='Picture not selected';
+l__.usun_wizytowke='Confirm deletion';
+l__.potwierdz_usuniecie='Confirm';
+l__.anuluj='Cancel';
+l__.usun='Delete';
+l__.opis_wizytowki='Description, card name:';
+//l__.wprowadz_plik_wizytowki='Wprowadź plik wizytówki'
+l__.wprowadz_tresc_wizytowki='Enter card details';
+l__.nieobowiazkowe='You could enter only selected fields';
+l__.edytuj_tresc_wizytowki='Edit card details';
+l__.opis_karty='Description, card name:';
+l__.nazwa_firmy='Company name';
+l__.imie_i_nazwisko='Name';
+l__.stanowisko='Position';
+l__.adres1='Adress (street)';
+l__.adres2='Adress cont.';
+l__.adres3='Zip and city';
+l__.tel='Phone number';
+l__.telkom='Mobile number';
+l__.adres_email='E-mail';
+l__.adres_www='Web page adress';
+l__.komunikator='Instant messanger id';
+l__.id1='Id 1 (VAT etc,)';
+l__.id2='Id 2 ';
+l__.konto_bankowe='Bank account number';
+l__.samochod='Car plate';
+
+l__.ustawiona_jako_domyslna='Set as default card';
+l__.wizytowka_skasowana='Card deleted';
+l__.blad_usuwanie_wizytowki='Error during deleting';
+
+l__.share_naglowek='Sending card';
+l__.share_temat='Card';
+l__.share_company_name='Company:';
+l__.share_imie_nazwisko='Name:';
+l__.share_stanowisko='Position:';
+l__.share_adres_1='Adress:';
+l__.share_adres_2='Adress cont.:';
+l__.share_adres_3='Zip code, city:';
+l__.share_tel='Phone:';
+l__.share_telkom='Mobile:';
+l__.share_email='E-mail:';
+l__.share_www='WWW:';
+l__.share_komunikator='Instant messenger:';
+l__.share_id1='Id 1:';
+l__.share_id2='Id 2:';
+l__.share_konto_bankowe='Bank account:';
+l__.share_samochod='License plate:';
+
+l__.share_program_temat='Check Cards!';
+l__.share_program_tresc="Cards it's a program that could store and fast display business cards, discounts cards etc.";
+
+l__.menu_glowne_dodaj_z_klawiatury="Add card";
+l__.menu_glowne_dodaj_z_aparatu="Tske photo of the card";
+l__.menu_glowne_dodaj_z_galerii="Select a card from gallery";
+l__.menu_glowne_ustawienia="Settings";
+l__.menu_glowne_pomoc="Help";
+l__.menu_glowne_o_programie="About";
+l__.menu_glowne_edytuj="Edit card";
+l__.menu_glowne_usun="Delete card";
+l__.menu_glowne_domyslna="Select as default card";
+l__.menu_glowne_share="Send card";
+
+l__.program_podoba='Do you like this program?';
+l__.program_przekaz_dotacje='If yes, than maybe send donation to author?';
+l__.dziekuje='Thank you!';

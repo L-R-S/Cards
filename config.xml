@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="net.szreter.Cards" version="1.0.0">
+    <name>Cards</name>
+    <description>Store and fast display of your invoicing informations, business cards, id's, shoping cards etc.</description>
+    <author email="apps@szreter.net" href="http://szreter.net">Lucjan R. Szreter</author>
+    <content src="index.html"/>
+    <access origin="*"/>
+    <preference name="AndroidPersistentFileLocation" value="Internal"/>
+    <preference name="iosPersistentFileLocation" value="Library"/>
+</widget>

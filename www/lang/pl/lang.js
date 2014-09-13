@@ -1,0 +1,76 @@
+var l__ = {}; //tylko w pliku PL w pozostalych wykomentować
+l__.grupa0 = 'Ogólne';
+l__.grupa1 = 'Firmowe';
+l__.grupa2 = 'Dokumenty osobiste';
+l__.grupa3 = 'Karty rabatowe';
+l__.grupa4 = 'Karty członkowskie';
+
+//l__.zapisano_ustawienia='Zapisano ustawienia';
+l__.brak_wizytowek='Brak zapisanych wizytówek';
+l__.nie_mozna_wyswietlic='Nie mozna wyświetlić wizytowki';
+l__.nie_wybrano_zdjecia='Nie wybrano zdjęcia!';
+l__.usun_wizytowke='Potwierdź usunięcie wizytówki';
+l__.potwierdz_usuniecie='Potwierdź';
+l__.anuluj='Anuluj';
+l__.usun='Usuń';
+l__.opis_wizytowki='Opis, nazwa wizytówki';
+//l__.wprowadz_plik_wizytowki='Wprowadź plik wizytówki'
+l__.wprowadz_tresc_wizytowki='Wprowadź treść wizytówki';
+l__.nieobowiazkowe='Możesz wpowadzić tylko wybrane pola';
+l__.edytuj_tresc_wizytowki='Edytuj treść wizytówki';
+l__.opis_karty='Opis, nazwa karty';
+l__.nazwa_firmy='Nazwa firmy';
+l__.imie_i_nazwisko='Imię i nazwisko';
+l__.stanowisko='Stanowisko';
+l__.adres1='Adres (ulica, nr domu)';
+l__.adres2='Adres cd.';
+l__.adres3='Kod i miasto';
+l__.tel='Numer telefonu';
+l__.telkom='Numer telefonu komórkowego';
+l__.adres_email='Adres e-mail';
+l__.adres_www='Adres strony internetowej';
+l__.komunikator='Komunikator';
+l__.id1='Numer ident. (NIP, PESEL, itp,)';
+l__.id2='Numer ident. (REGON, KRS, itp,)';
+l__.konto_bankowe='Numer konta bankowego';
+l__.samochod='Numer rejestracyjny';
+
+l__.ustawiona_jako_domyslna='Wizytówka została ustawiona jako domyślna';
+l__.wizytowka_skasowana='Wizytówka skasowana';
+l__.blad_usuwanie_wizytowki='Błąd podczas usuwania pliku wizytówki';
+
+l__.share_naglowek='Przesyłam wizytówkę.';
+l__.share_temat='Wizytówka';
+l__.share_company_name='Nazwa firmy:';
+l__.share_imie_nazwisko='Imię i nazwisko:';
+l__.share_stanowisko='Stanowisko:';
+l__.share_adres_1='Adres:';
+l__.share_adres_2='Adres cd.:';
+l__.share_adres_3='Kod poczt. miasto:';
+l__.share_tel='Telefon:';
+l__.share_telkom='Telefon:';
+l__.share_email='E-mail:';
+l__.share_www='WWW:';
+l__.share_komunikator='Komunikator:';
+l__.share_id1='Identyfikator 1:';
+l__.share_id2='Identyfikator 2:';
+l__.share_konto_bankowe='Numer Konta bank.:';
+l__.share_samochod='Numer rejestracyjny:';
+
+l__.share_program_temat='Zapoznaj się z programem Cards';
+l__.share_program_tresc='Progam Cards słuzy do szybkiego wyświetlania wizytówek, kart rabatowych, kart członkowskich itp.';
+
+l__.menu_glowne_dodaj_z_klawiatury="Dodaj wizytówkę";
+l__.menu_glowne_dodaj_z_aparatu="Zrób zdjęcie karty lub wizytówki";
+l__.menu_glowne_dodaj_z_galerii="Wybierz zdjęcie karty lub wizytówki z galerii";
+l__.menu_glowne_ustawienia="Ustawienia";
+l__.menu_glowne_pomoc="Pomoc";
+l__.menu_glowne_o_programie="O programie";
+l__.menu_glowne_edytuj="Edytuj wizytówkę";
+l__.menu_glowne_usun="Usuń wizytówkę";
+l__.menu_glowne_domyslna="Ustaw wizytówkę jako domyślną";
+l__.menu_glowne_share="Prześlij wizytówkę";
+
+l__.program_podoba='Podoba Ci się ten program?';
+l__.program_przekaz_dotacje='Jeżeli tak, to może przekażesz dotację autorowi?';
+l__.dziekuje='Dziękuję!';

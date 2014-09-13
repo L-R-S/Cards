@@ -1,0 +1,489 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    font-family: 'Droid Sans', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+
+	height: 100%;
+    width: 100%;
+
+    margin:0;
+    padding:0;
+
+}
+::-webkit-input-placeholder {
+    color:    #faa;
+	font-size: 24px;
+}
+.okno_duze, #app {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+	display: block;
+	height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: #E4E4E4;
+	background: url(../img/papers/paper0003.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	background-size: cover;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+    text-align: center;
+
+}
+.okno_duze {
+    padding: 5px;
+}
+	#wprowadz_tresc_wizytowki {
+		color: white;
+		font-size: 48px;
+		padding: 0;
+		margin: 0;
+	}
+	#wprowadz_tresc_wizytowki_info {
+		color: white;
+		font-size: 32px;
+		padding: 0;
+		margin: 0;
+	}
+
+#menu_glowne,
+/*#menu_dodaj_wiz_sposob,*/
+#menu_dodaj_wiz_z_klawiatury,
+#lista_wizytowek_div,
+#okno_wizytowki,
+#okno_pobierania_zdjecia,
+#okno_mg,
+#wizytowka_sterowanie,
+#okno_pomoc,
+#okno_o_programie,
+#okno_ustawienia
+{
+	display: none;
+}
+
+.zamknij_okno {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: right;
+/*	width: 50px;
+	height: 50px;
+	border-radius: 0 10px 0 10px;
+	border-left: 5px solid white;
+	border-right: 5px solid white;*/
+	/*border: 3px solid red;*/
+}
+	.zamknij_okno img {
+		max-width: 50px;
+	}
+.menu_menu {
+	position: fixed;
+    text-align:center;
+	bottom: 0;
+	left: 0;
+    width: 100%;
+	/*border: 3px solid red;*/
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+	.menu_menu img {
+		width: 16%;
+		/*min-width: 100px;*/
+		margin: 20px;
+	}
+	.menu_menu .img_male {
+		width: 10%;
+		/*min-width: 100px;*/
+		margin: 20px;
+	}
+	#menu_menu_podmenu {
+		/*border: 3px solid white;*/
+		position: fixed;
+		bottom:0;
+		left:0;
+		height: auto;
+		border: 0;
+		padding: 10px;
+		box-shadow: black 0 0 20px;
+		border-radius: 0 10px 0 0;
+	}
+		#menu_menu_podmenu img {
+			max-width: 70px;
+			margin: 15px;
+
+		}
+#logo_glowne {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	width: 50%;
+	max-width: 250px;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+}
+	.okno_duze .img_pozycja {
+		width: 60px;
+		vertical-align: middle;
+		margin: 0 10px 0 0;
+	}
+	/*.okno_duze input[type="text"], .okno_duze input[type="tel"] {*/
+	input[type="text"], input[type="tel"] {
+		border-radius: 10px;
+		height: 60px;
+		width: 80%;
+		max-width: 500px;
+		padding: 10px;
+		border: 0;
+		background-color: white;
+		margin: 10px 10px;
+		font-weight: bold;
+		color: #0072c6;
+		font-size: 36px;
+	}
+	#dodaj_wiz_z_klawiatury_cofnij, #dodaj_wiz_z_klawiatury_plus  {
+		width: 60px;
+		margin: 10px 20px;
+	}
+
+#pola_szczegolowe {
+	margin: 10px 0 0 0;
+	border-top: 3px solid white;
+	padding: 5px 0 0 0;
+	-webkit-column-count: 1;
+	-webkit-column-gap: 10px;
+	-moz-column-count: 1;
+	-moz-column-gap: 10px;
+	column-count: 1;
+	column-gap: 10px;
+}
+
+#lista_wizytowek_div {
+	padding-top: 60px;
+
+}
+	.wizytowka_lista_pozycja {
+		position: relative;
+		width: 100%;
+		padding: 20px 20px;
+		border-bottom: 3px solid white;
+		color: white;
+		margin: 0;
+		text-align: left;
+		font-size: 36px;
+
+	}
+/*		.wizytowka_lista_ikony {
+			position: absolute;
+			top: 10px;
+			right: 0;
+			width: auto;
+			max-width: 50%;
+			text-align: right;
+		}
+			.wizytowka_lista_pozycja .wizytowka_lista_ikony img {
+				width: 60px;
+				margin-left: 20px;
+			}*/
+
+/*========== okno pobierania zdjęcia =============*/
+#okno_pobierania_zdjecia  {
+	font-size: 24px;
+}
+#okno_pobierania_zdjecia .menu {
+	margin: 10px 40px;
+	width: 50px;
+
+}
+#okno_pobierania_zdjecia img #zdjecie,
+#zdjecie
+{
+	position: relative;
+	top: 10px;
+	max-height: 50%;
+	max-width: 80%;
+	box-shadow: black 0 0 20px;
+	border-radius: 20px;
+}
+
+#okno_mg {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	background-color: black;
+	color: white;
+	font-size: 36px;
+	width: 100%;
+	min-height: 30%;
+	text-align: center;
+	/*display: block;*/
+
+}
+	#okno_mg div {
+		margin:0;
+		width: 100%;
+		border-bottom: 3px solid white;
+		padding: 20px;
+	}
+	#okno_mg #mg_pomoc,
+	#okno_mg #mg_o_programie,
+	#okno_mg #mg_ustawienia
+	{
+		width: 30%;
+		float: right;
+		margin: 0 5px;
+	}
+
+
+/*========== szablon wyzwietlanej wizytowki =============*/
+/*TODO Utworzyc wybieranie stylów i szablonow      */
+.okno_wizytowki {
+	position: fixed;
+	top: 2%;
+	left: 2%;
+	width: 96%;
+	height: 96%;
+	margin: 0;
+	padding: 20px;
+	font-size: 36px;
+	text-align: center;
+
+	background: no-repeat center top;
+	background-color: white;
+	background-image: url(../img/papers/paper0005.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	box-shadow: black 0 0 30px;
+}
+	.okno_wizytowki div {
+		position: relative;
+		width: 100%;
+	}
+	.okno_wizytowki #wizytowka_company_name {
+		font-size: 48px;
+		font-weight: bold;
+		text-align: left;
+	}
+	.okno_wizytowki #wizytowka_imie_nazwisko {
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.okno_wizytowki #wizytowka_stanowisko {
+		font-size: 36px;
+		font-weight: normal;
+		text-align: center;
+	}
+	.okno_wizytowki #wizytowka_adres_1, .okno_wizytowki #wizytowka_adres_2, .okno_wizytowki #wizytowka_adres_3 {
+		text-align: left;
+	}
+	.okno_wizytowki #wizytowka_tel,
+	.okno_wizytowki #wizytowka_telkom,
+	.okno_wizytowki #wizytowka_komunikator,
+	.okno_wizytowki #wizytowka_email,
+	.okno_wizytowki #wizytowka_www
+	{
+		text-align: left;
+	}
+	.okno_wizytowki #wizytowka_id1, .okno_wizytowki #wizytowka_id2, .okno_wizytowki #wizytowka_samochod {
+		text-align: right;
+	}
+	.okno_wizytowki #wizytowka_konto_bankowe {
+		text-align: center;
+	}
+	.okno_wizytowki .wizytowka_z_pliku {
+		position: relative;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.okno_wizytowki table {
+		width: 100%;
+		vertical-align: bottom;
+	}
+	.okno_wizytowki p {
+		margin: 0;
+	}
+	.okno_wizytowki h1 {
+		color: red;
+		font-size: 40px;
+		text-align: center;
+	}
+	.okno_wizytowki h2 {
+		color: red;
+		font-size: 32px;
+		text-align: center;
+	}
+	/*wizytowka systemowa*/
+		#wiz_logo_cards {
+			position: relative;
+			width: 30%;
+			max-width: 300px;
+			float: left;
+			margin: 3% 5%;
+		}
+		#wiz_przekaz {
+			position: relative;
+			width: 30%;
+			max-width: 300px;
+			float: none;
+			margin: 10% 5%;
+		}
+/*========== szablon wyzwietlanej wizytowki KONIEC =============*/
+	/*.okno_wizytowki #wizytowka_sterowanie {*/
+	#wizytowka_sterowanie {
+		background-color: #E4E4E4;
+		background: url(../img/papers/paper0003.jpg) no-repeat center top;
+		-webkit-background-size: cover;
+		background-size: cover;
+
+		position: fixed;
+		bottom: 0;
+		left: 10%;
+/*		transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);*/
+		width: 80%;
+		padding: 20px;
+		/*height: 100px;*/
+		min-width: 310px;
+		border: 0;
+		border-radius: 20px 20px 0 0;
+		box-shadow: black 0 0 20px;
+		text-align: center;
+	}
+		/*.okno_wizytowki #wizytowka_sterowanie img {*/
+		#wizytowka_sterowanie table {
+			 width: 100%;
+
+		}
+		#wizytowka_sterowanie img {
+			width: 80px;
+			margin: 10px 30px;
+		}
+/*			.okno_wizytowki #wizytowka_sterowanie #td_poprzednia img,
+			.okno_wizytowki #wizytowka_sterowanie #td_nastepna img*/
+			#wizytowka_sterowanie #td_poprzednia {
+				text-align: left;
+			}
+			#wizytowka_sterowanie #td_nastepna {
+				text-align: right;
+			}
+			#wizytowka_sterowanie #td_poprzednia img,
+			#wizytowka_sterowanie #td_nastepna img
+			{
+				width: 140px;
+				margin: 0;
+			}
+
+
+
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+#debug {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	background-color: yellow;
+	max-height: 20%;
+	max-width: 20%;
+	z-index: 1000;
+	display: none;
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-width:1000px) {
+	#pola_szczegolowe {
+		-moz-column-count: 2;
+		-moz-column-gap: 10px;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 10px;
+		column-count: 2;
+		column-gap: 10px;
+	}
+}
+
+
+/*=====================PRZYKLAD*/
+@media screen and (-webkit-device-pixel-ratio: 0.5) {
+}
+@media screen and (-webkit-device-pixel-ratio: 0.75) {
+}
+/*Medium density (160), mdpi*/
+@media screen and (-webkit-device-pixel-ratio: 1) {
+	body {
+		font-size: 16px;
+	}
+	.menu_menu img {
+		width: 10%;
+		/*min-width: 100px;*/
+		margin: 20px;
+	}
+	.menu_menu .img_male {
+		width: 5%;
+		/*min-width: 100px;*/
+		margin: 20px;
+	}
+	#logo_glowne {
+		max-width: 250px;
+	}
+	.okno_wizytowki {
+	font-size: 30px;
+	}
+		.okno_wizytowki #wizytowka_company_name {
+		font-size: 40px;
+	}
+	.okno_wizytowki #wizytowka_imie_nazwisko {
+		font-size: 36px;
+	}
+	.okno_wizytowki #wizytowka_stanowisko {
+		font-size: 30px;
+	}
+	#wizytowka_sterowanie {
+		padding: 10px;
+	}
+	#wizytowka_sterowanie img {
+		width: 50px;
+		margin: 10px 20px;
+	}
+	#wizytowka_sterowanie #td_poprzednia img,
+	#wizytowka_sterowanie #td_nastepna img
+	{
+		width: 100px;
+		margin: 10px;
+	}
+}
+@media screen and (-webkit-device-pixel-ratio: 1.3) {
+}
+/*High density (240), hdpi*/
+@media screen and (-webkit-device-pixel-ratio: 1.5) {
+}
+ /*Extra high density (320), xhdpi*/
+@media screen and (-webkit-device-pixel-ratio: 2) {
+
+}
+@media screen and (-webkit-device-pixel-ratio: 2) {
+
+}
